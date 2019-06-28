@@ -23,8 +23,10 @@
 		8D640CD322605AC00090CEEF /* DailyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D640CD222605AC00090CEEF /* DailyDetail.swift */; };
 		8D779565229E815D00770F08 /* SqlitePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D779564229E815D00770F08 /* SqlitePage.swift */; };
 		8D779567229E889A00770F08 /* TargetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D779566229E889A00770F08 /* TargetPage.swift */; };
-		8D779569229F85EF00770F08 /* ConnectDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D779568229F85EF00770F08 /* ConnectDatabase.swift */; };
 		8D7795BA22A7B63500770F08 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7795B922A7B63500770F08 /* libsqlite3.tbd */; };
+		8D7795BD22AF853200770F08 /* ConnectDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7795BC22AF853100770F08 /* ConnectDatabase.swift */; };
+		8D7795BF22AFA3D100770F08 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7795BE22AFA3D100770F08 /* LogIn.swift */; };
+		8D77965C22C5F4DD00770F08 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77965B22C5F4DD00770F08 /* SignUp.swift */; };
 		8D9B9516223A626900B02102 /* pageviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B9515223A626900B02102 /* pageviewcontroller.swift */; };
 		8D9B9518223A842B00B02102 /* CouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B9517223A842B00B02102 /* CouponCell.swift */; };
 		8D9B951C223A85E900B02102 /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B951B223A85E900B02102 /* Coupon.swift */; };
@@ -80,9 +82,11 @@
 		8D640CD222605AC00090CEEF /* DailyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDetail.swift; sourceTree = "<group>"; };
 		8D779564229E815D00770F08 /* SqlitePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlitePage.swift; sourceTree = "<group>"; };
 		8D779566229E889A00770F08 /* TargetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetPage.swift; sourceTree = "<group>"; };
-		8D779568229F85EF00770F08 /* ConnectDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectDatabase.swift; path = ../../ConnectDatabase.swift; sourceTree = "<group>"; };
 		8D7795B922A7B63500770F08 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		8D7795BB22A7B66500770F08 /* BridgeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		8D7795BC22AF853100770F08 /* ConnectDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectDatabase.swift; sourceTree = "<group>"; };
+		8D7795BE22AFA3D100770F08 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		8D77965B22C5F4DD00770F08 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		8D9B9515223A626900B02102 /* pageviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageviewcontroller.swift; sourceTree = "<group>"; };
 		8D9B9517223A842B00B02102 /* CouponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCell.swift; sourceTree = "<group>"; };
 		8D9B951B223A85E900B02102 /* Coupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				8D39B73E2244D1FB001A9358 /* CenterCenterPage.swift */,
 				8D640CCC225F393B0090CEEF /* CenterPage.swift */,
 				8DE06814224CF8BC00173DAA /* CenterCenter.swift */,
+				8D7795BE22AFA3D100770F08 /* LogIn.swift */,
+				8D77965B22C5F4DD00770F08 /* SignUp.swift */,
 				8D640CD222605AC00090CEEF /* DailyDetail.swift */,
 				8D2870242272F68700E2CEC8 /* DailyDetailForm.swift */,
 				8D2870262272F69900E2CEC8 /* DailyDetailCell.swift */,
@@ -179,7 +185,7 @@
 				8D9B9517223A842B00B02102 /* CouponCell.swift */,
 				8D9B957D2241613D00B02102 /* WebView.swift */,
 				8D9B9515223A626900B02102 /* pageviewcontroller.swift */,
-				8D779568229F85EF00770F08 /* ConnectDatabase.swift */,
+				8D7795BC22AF853100770F08 /* ConnectDatabase.swift */,
 				8D640CCE22602B820090CEEF /* Assets.xcassets */,
 				8D234C1A22396A1300661202 /* LaunchScreen.storyboard */,
 				8D234C1D22396A1300661202 /* Info.plist */,
@@ -448,17 +454,19 @@
 				8D640CC5225B38730090CEEF /* CenterLeft.swift in Sources */,
 				8D2870272272F69A00E2CEC8 /* DailyDetailCell.swift in Sources */,
 				8D640CC7225B38870090CEEF /* CenterRight.swift in Sources */,
-				8D779569229F85EF00770F08 /* ConnectDatabase.swift in Sources */,
 				8D9B9516223A626900B02102 /* pageviewcontroller.swift in Sources */,
 				8D9B9522223A887700B02102 /* CouponList.swift in Sources */,
 				8D2870252272F68700E2CEC8 /* DailyDetailForm.swift in Sources */,
+				8D7795BF22AFA3D100770F08 /* LogIn.swift in Sources */,
 				8D9B9518223A842B00B02102 /* CouponCell.swift in Sources */,
+				8D7795BD22AF853200770F08 /* ConnectDatabase.swift in Sources */,
 				8D640CD322605AC00090CEEF /* DailyDetail.swift in Sources */,
 				8D779565229E815D00770F08 /* SqlitePage.swift in Sources */,
 				8D234C1222396A1200661202 /* AppDelegate.swift in Sources */,
 				8D9B951C223A85E900B02102 /* Coupon.swift in Sources */,
 				8D640CCD225F393B0090CEEF /* CenterPage.swift in Sources */,
 				8D39B73F2244D1FB001A9358 /* CenterCenterPage.swift in Sources */,
+				8D77965C22C5F4DD00770F08 /* SignUp.swift in Sources */,
 				8DE06815224CF8BC00173DAA /* CenterCenter.swift in Sources */,
 				8D779567229E889A00770F08 /* TargetPage.swift in Sources */,
 			);

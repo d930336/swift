@@ -85,6 +85,7 @@ class SqlitePage: UIViewController {
         do {
             let users = try self.database.prepare(self.usersTable)
             for user in users {
+                label.text = "\(user[self.id])"
                 print("userId: \(user[self.id]), name: \(user[self.name]), email: \(user[self.email])")
             }
         } catch {
